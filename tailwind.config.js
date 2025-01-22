@@ -5,7 +5,8 @@ export default {
     extend: {
       colors: {
         main: "#C1DCDC",
-        para: "1E1E1E",
+        para: "#1E1E1E",
+        thinpara: "#6f6f6f",
       },
     },
   },

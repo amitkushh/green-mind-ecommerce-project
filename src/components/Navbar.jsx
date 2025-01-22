@@ -1,20 +1,22 @@
 import React from "react";
+import { BsCart } from "react-icons/bs";
 
 function Navbar() {
   return (
-    <header className="flex justify-between items-center h-14">
+    <header className="flex justify-between items-center h-16 px-9">
       <nav className="flex justify-center items-center gap-36">
         <div>
-          <span>GREENMIND</span>
+          <span className="text-xl text-para font-lg">GREENMIND</span>
         </div>
-
-        <ul className="capitalize flex justify-center items-center gap-8">
+        <ul className="capitalize text-thinpara lg:flex lg:justify-center lg:items-center lg:gap-8 hidden">
           <li>home</li>
           <li>products</li>
           <li>contacts</li>
         </ul>
       </nav>
-      <div></div>
+      <div>
+        <BsCart />
+      </div>
     </header>
   );
 }
