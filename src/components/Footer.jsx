@@ -28,7 +28,7 @@ function Footer() {
   return (
     <footer className="bg-main ">
       <div className="flex flex-col mt-16 mx-6 py-12">
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-6">
           <div className="mb-2">
             <span className="text-xl text-para font-lg">GREENMIND</span>
           </div>
