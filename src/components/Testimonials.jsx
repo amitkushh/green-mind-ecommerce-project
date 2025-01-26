@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 function Testimonials() {
   return (
-    <div>Testimonials</div>
-  )
+    <div className="flex flex-col justify-center items-center my-16 mx-6">
+      <div className="flex flex-col mb-12">
+        <h2 className="text-3xl font-bold text-center">
+          What customers say about GREEMIND?
+        </h2>
+      </div>
+    </div>
+  );
 }
 
-export default Testimonials
+export default Testimonials;
