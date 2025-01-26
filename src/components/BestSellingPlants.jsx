@@ -30,7 +30,7 @@ function BestSellingPlants() {
           Easiest way to healthy life by buying your favorite plants{" "}
         </p>
         <div className="mt-6 flex justify-center items-center">
-          <button className="bg-thinpara py-3 px-8 rounded-md cursor-pointer">
+          <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer">
             See more
           </button>
         </div>
