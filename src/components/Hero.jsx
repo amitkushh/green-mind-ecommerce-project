@@ -9,7 +9,7 @@ function Hero() {
   return (
     <>
       <div>
-        <div className="flex flex-col justify-center items-center gap-10 bg-main my-6 mx-6 rounded-xl pt-6 px-4 relative">
+        <div className="flex flex-col justify-center items-center gap-10 bg-main my-6 mx-6 rounded-xl pt-6 px-4 relative lg:mx-24 lg:flex-row lg:justify-between lg:my-10">
           <div className="flex flex-col">
             <h1 className="text-4xl font-extrabold text-center">
               Buy your <br />

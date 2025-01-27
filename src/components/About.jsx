@@ -23,7 +23,7 @@ function About() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center my-16 mx-6">
+    <div className="flex flex-col justify-center items-center my-16 mx-6 lg:mx-24 lg:my-24">
       <div className="flex flex-col mb-12">
         <h2 className="text-3xl font-bold text-center">About us</h2>
         <p className="text-center mt-3 max-w-64">
@@ -32,7 +32,7 @@ function About() {
       </div>
 
       {/* three sections */}
-      <div className="flex flex-col justify-center items-center gap-7">
+      <div className="flex flex-col justify-center items-center gap-7 md:flex-row lg:flex-row">
         {allSection.map((about, index) => (
           <div
             className="flex flex-col justify-center items-center p-4 text-center gap-4"

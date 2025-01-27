@@ -3,7 +3,7 @@ import { BsCart } from "react-icons/bs";
 
 function Navbar() {
   return (
-    <header className="flex justify-between items-center h-16 px-6">
+    <header className="flex justify-between items-center h-16 mx-6 lg:mx-24">
       <nav className="flex justify-center items-center gap-36">
         <div>
           <span className="text-xl text-para font-lg">GREENMIND</span>

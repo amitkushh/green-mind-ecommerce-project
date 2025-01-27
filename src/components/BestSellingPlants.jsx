@@ -23,13 +23,13 @@ function BestSellingPlants() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center my-16 mx-6">
-      <div className="flex flex-col mb-12">
+    <div className="flex flex-col justify-center items-center my-16 mx-6 md:flex-row lg:flex-row lg:mx-24 lg:my-24 lg:items-start">
+      <div className="flex flex-col mb-12 md:mr-5 lg:mr-5">
         <h2 className="text-3xl font-bold text-center">Best Selling Plants</h2>
-        <p className="text-center mt-3 max-w-64">
+        <p className="text-center mt-3 max-w-64 lg:mt-5">
           Easiest way to healthy life by buying your favorite plants{" "}
         </p>
-        <div className="mt-6 flex justify-center items-center">
+        <div className="mt-6 flex justify-center items-center lg:mt-12">
           <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer">
             See more
           </button>
@@ -37,7 +37,7 @@ function BestSellingPlants() {
       </div>
 
       {/* plants section */}
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 md:flex-row lg:flex-row">
         {plants.map((plant, index) => (
           <div key={index} className="flex flex-col gap-6">
             <img src={plant.images} alt="plants" />
