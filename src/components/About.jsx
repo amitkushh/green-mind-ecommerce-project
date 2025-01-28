@@ -26,7 +26,7 @@ function About() {
     <div className="flex flex-col justify-center items-center my-16 mx-6 lg:mx-24 lg:my-24">
       <div className="flex flex-col mb-12">
         <h2 className="text-3xl font-bold text-center">About us</h2>
-        <p className="text-center mt-3 max-w-64">
+        <p className="text-center mt-3 max-w-64 lg:max-w-none">
           Order now and appreciate the beauty of nature
         </p>
       </div>

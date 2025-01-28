@@ -2,6 +2,7 @@ import React from "react";
 import plantOne from "../assets/best-selling-images/plant-one.png";
 import plantTwo from "../assets/best-selling-images/plant-two.png";
 import plantThree from "../assets/best-selling-images/plant-three.png";
+import { BsArrowRight } from "react-icons/bs";
 
 function BestSellingPlants() {
   const plants = [
@@ -25,13 +26,15 @@ function BestSellingPlants() {
   return (
     <div className="flex flex-col justify-center items-center my-16 mx-6 md:flex-row lg:flex-row lg:mx-24 lg:my-24 lg:items-start">
       <div className="flex flex-col mb-12 md:mr-5 lg:mr-5">
-        <h2 className="text-3xl font-bold text-center">Best Selling Plants</h2>
-        <p className="text-center mt-3 max-w-64 lg:mt-5">
+        <h2 className="text-3xl font-bold text-center lg:text-start">
+          Best Selling Plants
+        </h2>
+        <p className="text-center mt-3 max-w-64 lg:mt-5 lg:text-start lg:max-w-40">
           Easiest way to healthy life by buying your favorite plants{" "}
         </p>
-        <div className="mt-6 flex justify-center items-center lg:mt-12">
-          <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer">
-            See more
+        <div className="mt-6 flex justify-center items-center lg:mt-12 lg:justify-start">
+          <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer flex items-center gap-2">
+            See more <BsArrowRight />
           </button>
         </div>
       </div>
