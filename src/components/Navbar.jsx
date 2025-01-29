@@ -3,7 +3,7 @@ import { BsCart } from "react-icons/bs";
 import { TbMenuDeep } from "react-icons/tb";
 import Profile from "../assets/navbar-images/profile.png";
 import Line from "../assets/navbar-images/line.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -15,9 +15,30 @@ function Navbar() {
           </Link>
         </div>
         <ul className="capitalize text-thinpara lg:flex lg:justify-center lg:items-center lg:gap-8 hidden">
-          <li>home</li>
-          <li>products</li>
-          <li>contacts</li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${isActive ? "text-para" : "text-thinpara"}`
+            }
+          >
+            <li>home</li>
+          </NavLink>
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              `${isActive ? "text-para" : "text-thinpara"}`
+            }
+          >
+            <li>products</li>
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `${isActive ? "text-para" : "text-thinpara"}`
+            }
+          >
+            <li>contacts</li>
+          </NavLink>
         </ul>
       </nav>
       <div className="hidden lg:flex lg:justify-center lg:items-center gap-12">

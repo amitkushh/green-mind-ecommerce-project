@@ -3,6 +3,7 @@ import plantOne from "../assets/best-selling-images/plant-one.png";
 import plantTwo from "../assets/best-selling-images/plant-two.png";
 import plantThree from "../assets/best-selling-images/plant-three.png";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function BestSellingPlants() {
   const plants = [
@@ -26,21 +27,23 @@ function BestSellingPlants() {
   return (
     <div className="flex flex-col justify-center items-center my-16 mx-6 md:flex-row lg:flex-row lg:mx-24 lg:my-24 lg:items-start">
       <div className="flex flex-col mb-12 md:mr-5 lg:mr-5">
-        <h2 className="text-3xl font-bold text-center lg:text-start">
+        <h2 className="text-3xl font-bold text-center md:text-2xl md:text-start lg:text-start ">
           Best Selling Plants
         </h2>
-        <p className="text-center mt-3 max-w-64 lg:mt-5 lg:text-start lg:max-w-40">
+        <p className="text-center mt-3 max-w-64 lg:mt-5 md:text-start lg:text-start lg:max-w-40">
           Easiest way to healthy life by buying your favorite plants{" "}
         </p>
-        <div className="mt-6 flex justify-center items-center lg:mt-12 lg:justify-start">
-          <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer flex items-center gap-2">
-            See more <BsArrowRight />
-          </button>
+        <div className="mt-6 flex justify-center items-center md:justify-start lg:mt-12 lg:justify-start">
+          <Link to="/products">
+            <button className="bg-[#adadad] font-medium py-3 px-8 rounded-md cursor-pointer flex items-center gap-2 md:py-2 md:px-3">
+              See more <BsArrowRight />
+            </button>
+          </Link>
         </div>
       </div>
 
       {/* plants section */}
-      <div className="flex flex-col gap-12 md:flex-row lg:flex-row">
+      <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {plants.map((plant, index) => (
           <div key={index} className="flex flex-col gap-6">
             <img src={plant.images} alt="plants" />
