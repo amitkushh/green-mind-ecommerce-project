@@ -9,13 +9,13 @@ function Hero() {
   return (
     <>
       <div>
-        <div className="flex flex-col justify-center items-center gap-10 bg-main my-6 mx-6 rounded-xl pt-6 px-4 relative lg:mx-24 lg:flex-row lg:justify-between lg:my-1 lg:pt-0">
-          <div className="flex flex-col lg:ml-10 lg:w-1/2">
-            <h1 className="text-4xl font-extrabold text-center lg:text-6xl lg:text-start">
+        <div className="flex flex-col justify-center items-center gap-10 bg-main my-6 mx-6 rounded-xl pt-6 px-4 relative md:mx-14 md:flex-row md:justify-between md:my-1 md:pt-0 lg:mx-24 lg:flex-row lg:justify-between lg:my-1 lg:pt-0">
+          <div className="flex flex-col md:ml-3 md:w-1/2 lg:ml-10 lg:w-1/2">
+            <h1 className="text-4xl font-extrabold text-center md:text-start lg:text-6xl lg:text-start">
               Buy your <br />
               dream plants
             </h1>
-            <div className="flex items-center justify-center mt-10 gap-5 lg:justify-start">
+            <div className="flex items-center justify-center mt-10 gap-5 md:justify-start lg:justify-start">
               <div className="flex flex-col">
                 <span className="font-medium text-xl">50+</span>
                 <span className="capitalize">plant species</span>
@@ -28,7 +28,7 @@ function Hero() {
                 <span className="capitalize">Customers</span>
               </div>
             </div>
-            <div className="flex justify-center items-center mt-10 lg:justify-start">
+            <div className="flex justify-center items-center mt-10 md:justify-start lg:justify-start">
               <div>
                 <input
                   type="search"
@@ -44,8 +44,11 @@ function Hero() {
             </div>
           </div>
           {/* image section start */}
-          <div className="pt-20 lg:w-1/2">
-            <img src={topImg} className="absolute left-60 bottom-56 w-16 " />
+          <div className="pt-20 md:w-1/2 lg:w-1/2">
+            <img
+              src={topImg}
+              className="absolute left-60 bottom-56 w-16 md:left-[550px] md:w-12 lg:left-[1000px] lg:w-20"
+            />
             <div className="bg-para rounded-t-full rounded-l-full h-64 w-64 lg:h-[350px] lg:w-96">
               <img
                 src={Plants}
@@ -54,7 +57,7 @@ function Hero() {
             </div>
             <img
               src={bottomImg}
-              className="absolute bottom-2 left-2 w-16 lg:left-[430px] lg:w-44 lg:bottom-12"
+              className="absolute bottom-2 left-2 w-16 md:left-[300px] lg:left-[430px] lg:w-44 lg:bottom-12"
             />
           </div>
         </div>

@@ -7,14 +7,14 @@ import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header className="flex justify-between items-center h-16 mx-6 lg:mx-24 lg:h-24">
+    <header className="flex justify-between items-center h-16 mx-6 md:mx-14 lg:mx-24 lg:h-24">
       <nav className="flex justify-center items-center gap-36">
         <div>
           <Link href="/">
             <span className="text-xl text-para font-lg">GREENMIND</span>
           </Link>
         </div>
-        <ul className="capitalize text-thinpara lg:flex lg:justify-center lg:items-center lg:gap-8 hidden">
+        <ul className="capitalize text-thinpara md:flex md:justify-center md:items-center md:gap-5 lg:flex lg:justify-center lg:items-center lg:gap-8 hidden">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -41,7 +41,7 @@ function Navbar() {
           </NavLink>
         </ul>
       </nav>
-      <div className="hidden lg:flex lg:justify-center lg:items-center gap-12">
+      <div className="hidden md:flex md:justify-center md:items-center md:gap-5 lg:flex lg:justify-center lg:items-center lg:gap-12">
         <BsCart />
         <img src={Profile} />
         <img src={Line} />

@@ -27,7 +27,7 @@ function Footer() {
 
   return (
     <footer className="bg-main ">
-      <div className="flex flex-col mt-16 mx-6 py-12 md:flex-row md:justify-between lg:flex-row lg:justify-between lg:mx-24">
+      <div className="flex flex-col mt-16 mx-6 py-12 md:flex-row md:mx-14 md:justify-between lg:flex-row lg:justify-between lg:mx-24">
         <div className="flex flex-col mb-6 md:mr-10 lg:mr-10">
           <div className="mb-2">
             <span className="text-xl text-para font-lg">GREENMIND</span>
@@ -64,7 +64,7 @@ function Footer() {
       </div>
 
       {/* footer bar section */}
-      <div className="mx-6 pb-11 lg:mx-24">
+      <div className="mx-6 pb-11 md:mx-14 lg:mx-24">
         <span>2023 all Right Reserved Term of use GREENMIND</span>
       </div>
     </footer>

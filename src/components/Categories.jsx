@@ -16,7 +16,7 @@ function Categories() {
         </div>
       </div>
       {/* image sections */}
-      <div className="bg-main flex flex-col justify-center items-center px-6 mb-16 py-14 lg:px-24">
+      <div className="bg-main flex flex-col justify-center items-center px-6 mb-16 py-14 md:px-14 lg:px-24">
         <div className="flex flex-col gap-10 md:flex-row lg:flex-row">
           {/* image one */}
           <div className="flex flex-col md:items-center lg:items-center lg:absolute lg:left-24 lg:top-28">

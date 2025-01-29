@@ -25,7 +25,7 @@ function BestSellingPlants() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center my-16 mx-6 md:flex-row lg:flex-row lg:mx-24 lg:my-24 lg:items-start">
+    <div className="flex flex-col justify-center items-center my-16 mx-6 md:mx-14 md:flex-row lg:flex-row lg:mx-24 lg:my-24 lg:items-start">
       <div className="flex flex-col mb-12 md:mr-5 lg:mr-5">
         <h2 className="text-3xl font-bold text-center md:text-2xl md:text-start lg:text-start ">
           Best Selling Plants
